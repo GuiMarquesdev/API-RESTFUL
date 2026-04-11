@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "João Silva",
+      "email": "joao.silva@email.com",
+      "role": "admin",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Joao",
+      "created_at": "2024-01-15T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Maria Oliveira",
+      "email": "maria.oli@email.com",
+      "role": "editor",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Maria",
+      "created_at": "2024-02-20T14:45:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Carlos Souza",
+      "email": "carlos.dev@email.com",
+      "role": "viewer",
+      "status": "inactive",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Carlos",
+      "created_at": "2024-03-05T09:15:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Ana Costa",
+      "email": "ana.costa@email.com",
+      "role": "admin",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ana",
+      "created_at": "2024-03-10T11:20:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Lucas Pereira",
+      "email": "lucas.p@email.com",
+      "role": "viewer",
+      "status": "active",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Lucas",
+      "created_at": "2024-03-12T16:00:00Z"
+    }
+  ]
+}
