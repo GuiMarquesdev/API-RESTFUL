@@ -22,13 +22,13 @@ app.get("/client/:id" , function(req, res) {
 app.post("/client" , function(req, res) {
     const { name, email } = req.body; 
 
-    res.json({ message: "Cliente criado com sucesso!", client: { name, email } });
+    res.json({ message: "Client criado com sucesso!", client: { name, email } });
 } );
 
 
 app.put("/client/:id" , function(req, res) {
     const { id } = req.params; 
-    const clinet = data.find(client => client.id === (id));
+    const client = data.find(client => client.id === (id));
 
     if (!client) {
         return res.status(204).json({ error: "Client não encontrado" });
@@ -36,11 +36,11 @@ app.put("/client/:id" , function(req, res) {
 
     const { name, email } = req.body;
 
-    clinet .name = name = clinet.name;
-    clinet .email = email = clinet.email;
+    client .name = name = client.name;
+    client .email = email = client.email;
 
 
-    res.json({ message: "Cliente atualizado com sucesso!", client: clinet });
+    res.json({ message: "Client atualizado com sucesso!", client: client });
 
 } );
 
@@ -48,7 +48,7 @@ app.delete("/client/:id" , function(req, res) {
     const { id } = req.params;
     const clientFiltred = data.filter(client => client.id !== (id));
 
-    req.json({ message: "Cliente deletado com sucesso!", clients: clientFiltred });
+    res.json({ message: "Client deletado com sucesso!", client: clientFiltred });
 } );
 
 app.listen(3000, function() {
